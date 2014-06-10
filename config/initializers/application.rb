@@ -1,5 +1,4 @@
 require 'sinatra'
-require 'pry'
 require 'rakuten_web_service'
 require 'keen'
 
