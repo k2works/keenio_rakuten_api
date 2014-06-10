@@ -281,7 +281,7 @@ run rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
 ![](https://farm6.staticflickr.com/5112/14203038649_bdf3ba11af.jpg)
 
 ###　集計状況を日々確認する
-http://rakuten-ranking.herokuapp.com/にアクセスして集計が実行されているかを確認する。
+http://rakuten-ranking.herokuapp.com/ にアクセスして集計が実行されているかを確認する。
 ![](https://farm3.staticflickr.com/2905/14366576336_2b7266d976.jpg)
 
 # 参照
