@@ -2,5 +2,4 @@
 
 development: "sqlite://db/development.sqlite3"
 test: "sqlite://db/test.sqlite3"
-production: "sqlite://db/production.sqlite3"
-
+production: "postgres://k2works@localhost/keenio_rakuten_api_production"

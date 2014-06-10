@@ -46,6 +46,7 @@ GEM
     minitest (5.3.4)
     multi_json (1.10.1)
     multipart-post (1.2.0)
+    pg (0.17.1)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -93,6 +94,7 @@ DEPENDENCIES
   guard-livereload
   keen
   minitest (~> 5.2)
+  pg
   pry
   pry-byebug
   pry-doc
