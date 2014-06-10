@@ -215,7 +215,7 @@ _views/welcome.erb_
 
 ## <a name="6">Herokuにアップする</a>
 ### Gemfile編集
-_Gemfile
+_Gemfile_
 ```ruby
 source "https://rubygems.org/"
 ruby "2.1.1"
@@ -263,6 +263,27 @@ $ heroku apps:rename rakuten-ranking
 $ heroku run rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
 ```
 
+### スケジューラに登録する
+```bash
+$ heroku addons:add scheduler:standard
+Adding scheduler:standard on rakuten-ranking... done, v9 (free)
+This add-on consumes dyno hours, which could impact your monthly bill. To learn more:
+http://devcenter.heroku.com/addons_with_dyno_hour_usage
+To manage scheduled jobs run:
+heroku addons:open scheduler
+Use `heroku addons:docs scheduler` to view documentation.
+$ heroku addons:open scheduler
+```
+スケジューラ画面で以下のrakeタスクを追加する（実行はDaily)
+```bash
+run rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
+```
+![](https://farm6.staticflickr.com/5112/14203038649_bdf3ba11af.jpg)
+
+###　集計状況を日々確認する
+http://rakuten-ranking.herokuapp.com/にアクセスして集計が実行されているかを確認する。
+![](https://farm3.staticflickr.com/2905/14366576336_2b7266d976.jpg)
+
 # 参照
 + [Keen IO](https://keen.io/)
 + [楽天WEB SERVICE](http://webservice.rakuten.co.jp/)
@@ -270,3 +291,4 @@ $ heroku run rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
 + [GitHub](https://github.com/rakuten-ws/rws-ruby-sdk)
 + [[Ruby][rake]Rakeの基本的な使い方まとめ](http://d.hatena.ne.jp/unageanu/20100829/1283069269)
 + [Use environment variables in Rake task](http://stackoverflow.com/questions/15690135/use-environment-variables-in-rake-task)
++ [Heroku Scheduler](https://devcenter.heroku.com/articles/scheduler)
