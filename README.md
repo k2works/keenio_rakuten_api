@@ -215,6 +215,13 @@ _views/layout.erb_
 _views/welcome.erb_
 
 ## <a name="6">Herokuにアップする</a>
+### Gemfile編集
+_Gemfile
+```ruby
+source "https://rubygems.org/"
+ruby "2.1.1"
+・・・
+```
 
 # 参照
 + [Keen IO](https://keen.io/)
