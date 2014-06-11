@@ -276,7 +276,7 @@ $ heroku addons:open scheduler
 ```
 スケジューラ画面で以下のrakeタスクを追加する（実行はDaily)
 ```bash
-run rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
+rake keyword='クエン酸' shopcode='healthy-company' app:get_rank
 ```
 ![](https://farm6.staticflickr.com/5112/14203038649_bdf3ba11af.jpg)
 
